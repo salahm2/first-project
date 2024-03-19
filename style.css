@@ -1,0 +1,114 @@
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1400px;
+}
+/** header start */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  font-family: Cairo;
+  src: url(./Cairo-Regular.ttf);
+}
+.logo-container {
+  display: flex;
+}
+.logo-container .logo {
+  color: #000;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  gap: 50px;
+}
+.navbar a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-decoration: none;
+  /* margin-left: 50px; */
+}
+/** header styling end */
+
+/** hero-section start */
+.hero-section h1 {
+  color: #000;
+  text-align: center;
+  font-family: Cairo;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-section p {
+  color: #000;
+  text-align: center;
+  font-family: Cairo;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-section .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 41px;
+}
+.hero-section .button-container .button-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .button-container .button {
+  color: #000;
+  text-align: center;
+  font-family: Cairo;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 0;
+  background-color: transparent;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+.hero-section .button-container i {
+  display: flex;
+  z-index: 1;
+}
+.hero-section .button-container .button-ellipse {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/** hero-section end */
+
+.grp-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.img-rectangle {
+  width: 100%;
+  max-width: 1436px;
+  height: 601px;
+}
