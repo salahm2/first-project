@@ -1,10 +1,14 @@
 body {
   margin: 0 auto;
   box-sizing: border-box;
-  max-width: 1400px;
 }
 /** header start */
-header {
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 15px;
+}
+.container header {
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
@@ -17,7 +21,6 @@ header {
   display: flex;
 }
 .logo-container .logo {
-  color: #000;
   text-align: right;
   font-family: Cairo;
   font-size: 35px;
@@ -25,6 +28,10 @@ header {
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+  background: linear-gradient(90deg, #8d02c4 50%, #0802c3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .navbar {
   display: flex;
@@ -34,11 +41,16 @@ header {
   color: rgb(0, 0, 0);
   font-size: 20px;
   text-decoration: none;
-  /* margin-left: 50px; */
 }
 /** header styling end */
 
 /** hero-section start */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-top: 40px;
+}
 .hero-section h1 {
   color: #000;
   text-align: center;
@@ -47,6 +59,7 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin: 0;
 }
 
 .hero-section p {
@@ -57,12 +70,14 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin: 0;
 }
 
 .hero-section .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
   gap: 41px;
 }
 .hero-section .button-container .button-wrapper {
@@ -98,17 +113,119 @@ header {
   z-index: 0;
 }
 
-/** hero-section end */
-
-.grp-img {
+.hero-section .grp-img {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
 }
 
-.img-rectangle {
+.hero-section .grp-img .img-rectangle {
   width: 100%;
   max-width: 1436px;
   height: 601px;
+}
+
+/** section-2 end */
+
+.section-2 .div-Rectangle {
+  background-color: #202024;
+  height: 1039px;
+  border-radius: 64px 64px 0px 0px;
+  margin-top: -280px;
+  z-index: -1;
+  position: relative;
+}
+
+.section-2 .div-Rectangle .container-2 {
+  padding-top: 350px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section-2 .div-Rectangle .container-2 .text h2 {
+  color: #bc17d0;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section-2 .div-Rectangle .container-2 .text p {
+  color: #fff;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-2 .div-Rectangle .container-2 .group-status {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.section-2 .div-Rectangle .container-2 .number-status h1 {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.section-2 .div-Rectangle .container-2 .group-status .number-status p {
+  color: #fff;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  bottom: 100px;
+}
+
+.section-2 .div-Rectangle .container-2 .group-status .number-status svg {
+  position: absolute;
+  bottom: 240px;
+  right: 300px;
+}
+
+.section-2 .div-Rectangle .container-2 .group-status .number-status {
+  width: 210.477px;
+  height: 175px;
+}
+
+.section-2 .div-Rectangle .container-2 .number-status2 h1 {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.section-2 .div-Rectangle .container-2 .group-status .number-status2 p {
+  color: #fff;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  bottom: 100px;
+}
+
+.section-2 .div-Rectangle .container-2 .group-status .number-status svg {
+  position: absolute;
+  bottom: 240px;
+  right: 300px;
 }
